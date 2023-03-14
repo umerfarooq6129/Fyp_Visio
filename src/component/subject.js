@@ -1,12 +1,21 @@
-import React from 'react'
+import React , {useEffect, useState} from 'react'
 import Sub from '../sub.png'
-import { NavLink } from "react-router-dom";
-
+import { NavLink } from "react-router-dom"
 import './index.css'
+import axios from "axios";
 
-const subject = (props) => {
+const Subject = () => {
   return (
+    
     <>
+      <div>
+            <h1>Data:</h1>
+            {/* <ul>
+                {data.map(item => (
+                    <li key={item._id}>{item.title}</li>
+                ))}
+            </ul> */}
+        </div>
       <div className="subject" style={{
         backgroundImage: `url(${Sub})`,
         backgroundPosition: 'center',
@@ -26,6 +35,15 @@ const subject = (props) => {
             </div>
 
             <div className="sub-content">
+              {/* {
+                data && data.map((item, index) => {
+                  return(
+                  < tr key= {index}>
+                    <td>ddd{item.name}</td>
+                  </ tr>
+                  )
+                })
+              } */}
               <p className="subj"><NavLink to="/quiz">Database</NavLink></p>
               <p className="subj"><NavLink to="/quiz">Data Science</NavLink></p>
               <p className="subj"><NavLink to="/quiz">Mathematics</NavLink></p>
@@ -46,4 +64,4 @@ const subject = (props) => {
   )
 }
 
-export default subject
+export default Subject

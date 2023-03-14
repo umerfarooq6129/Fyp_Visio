@@ -13,6 +13,7 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -22,6 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:4001/",
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -42,6 +45,6 @@
   },
   "devDependencies": {
     "eslint-plugin-react-hooks": "^4.6.0",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.9.0"
   }
 }

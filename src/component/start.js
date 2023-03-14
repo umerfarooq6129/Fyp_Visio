@@ -14,7 +14,7 @@ const start = () => {
                 width:'100%',
                 height:'100vh',
                 objectFit:'cover'}}>
-            <button> <NavLink to="/teams" style={{color:'white',textDecoration:'none'}} >Start</NavLink> </button>
+            <button > <NavLink to="/teams" style={{color:'white',textDecoration:'none'}} >Start</NavLink> </button>
         </div>
     </>
   )
